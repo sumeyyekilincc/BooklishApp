@@ -70,35 +70,37 @@ class _SecondPageState extends State<SecondPage> {
                                 ),
                               ),
                             ),
-                            SizedBox(
-                              width: 260,
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    controllerNewsPage
-                                            .news.result?[index].name ??
-                                        "--",
-                                    maxLines: 4,
-                                    style: const TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 13,
-                                        overflow: TextOverflow.ellipsis),
-                                  ),
-                                  Text(
-                                    controllerNewsPage
-                                            .news.result?[index].description ??
-                                        "--",
-                                    maxLines: 3,
-                                    style: const TextStyle(
-                                      color: Colors.black54,
-                                      fontSize: 12,
-                                      overflow: TextOverflow.ellipsis,
+                            Expanded(
+                              child: SizedBox(
+                                width: 260,
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      controllerNewsPage
+                                              .news.result?[index].name ??
+                                          "--",
+                                      maxLines: 4,
+                                      style: const TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 13,
+                                          overflow: TextOverflow.ellipsis),
                                     ),
-                                  ),
-                                ],
+                                    Text(
+                                      controllerNewsPage.news.result?[index]
+                                              .description ??
+                                          "--",
+                                      maxLines: 3,
+                                      style: const TextStyle(
+                                        color: Colors.black54,
+                                        fontSize: 12,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ],
