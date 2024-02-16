@@ -89,8 +89,8 @@ class _SecondPageState extends State<SecondPage> {
                                           overflow: TextOverflow.ellipsis),
                                     ),
                                     Text(
-                                      controllerNewsPage.news.result?[index]
-                                              .description ??
+                                      controllerNewsPage
+                                              .news.result?[index].description ??
                                           "--",
                                       maxLines: 3,
                                       style: const TextStyle(
